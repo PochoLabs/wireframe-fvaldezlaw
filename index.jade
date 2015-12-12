@@ -48,26 +48,43 @@ div.container
 
     div.row
         div.col-md-3
-            div.service
-                h3 #[a(href="#") Employers/Employees]
+            a(type="button", data-toggle="modal", data-target="#modal1")
+                div.service
+                    h3 Employers
         div.col-md-3
-            div.service
-                h3 #[a(href="#") Investors & Startups]
+            a(type="button", data-toggle="modal", data-target="#modal2")
+                div.service
+                    h3 Investors &amp; Startups
         div.col-md-3
-            div.service
-                h3 #[a(href="#") Artists]
+            a(type="button", data-toggle="modal", data-target="#modal3")
+                div.service
+                    h3 Investors &amp; Startups
         div.col-md-3
-            div.service
-                h3 #[a(href="#") Family]
+            a(type="button", data-toggle="modal", data-target="#modal4")
+                div.service
+                    h3 Investors &amp; Startups
         div.col-md-3
-            div.service
-                h3 #[a(href="#") Waivers]
+            a(type="button", data-toggle="modal", data-target="#modal5")
+                div.service
+                    h3 Investors &amp; Startups
         div.col-md-3
-            div.service
-                h3 #[a(href="#") Immigration Court/Detention]
+            a(type="button", data-toggle="modal", data-target="#modal6")
+                div.service
+                    h3 Investors &amp; Startups
         div.col-md-3
-            div.service
-                h3 #[a(href="#") Executive Action]
+            a(type="button", data-toggle="modal", data-target="#modal7")
+                div.service
+                    h3 Investors &amp; Startups
         div.col-md-3
-            div.service
-                h3 #[a(href="#") Citizenship]
+            a(type="button", data-toggle="modal", data-target="#modal8")
+                div.service
+                    h3 Investors &amp; Startups
+        
+    include _partials/modal1.jade
+    include _partials/modal2.jade
+    include _partials/modal3.jade
+    include _partials/modal4.jade
+    include _partials/modal5.jade
+    include _partials/modal6.jade
+    include _partials/modal7.jade
+    include _partials/modal8.jade
