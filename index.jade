@@ -1,90 +1,72 @@
-nav.navbar.navbar-inverse.navbar-fixed-top(role="navigation")
-    div.container
-        div.navbar-header
-            button.navbar-toggle(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1")
-                span.sr-only Toggle navigation
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-            a.navbar-brand(href="#") FVALDEZ
-        div.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
-            ul.nav.navbar-nav.navbar-right
-                li
-                    a(href="#") Home
-                li
-                    a(href="#") About
-                li
-                    a(href="#") Services
-                li
-                    a(href="#") News
-                li
-                    a(href="#") Virtual Office
+include _partials/nav.jade
 
 div.container
-    div.jumbotron
-        h2 Serving individuals, investors and employers worldwide. 
-        p FVALDEZLAW PC invests in technology in order to bring experienced immigration attorneys to you at affordable rates.  Technology breaks down the barriers of a traditional legal office and allows us to serve clients throughout the U.S. and the world.  Contact us to inquire about our virtual law office.
-        a.btn.btn-primary(href="#", role="button") Learn More
-        
-    div.row
-        div.col-lg-6.col-md-6
-            p FVALDEZLAW PC embraces a new model for providing legal services.  We use technology to break the barriers posed by a more traditional legal office.  Technology allows us to serve clients in most immigration matters regardless of their location.  If you are open to working with attorneys in a more efficient and cost effective manner, please contact us to inquire if we can serve you through our virtual law office.
-        div.col-lg-6.col-md-6
-            ul.nav.nav-tabs.nav-justified(role="tablist")
-                li.active(role="presentation") #[a(data-toggle="tab", href="#sec1", role="tab", aria-controls="#sec1") Call Today]
-                li(role="presentation") #[a(data-toggle="tab", href="#sec2", role="tab", aria-controls="#sec2") Skype Consultaion]
-                li(role="presentation") #[a(data-toggle="tab", href="#sec3", role="tab", aria-controls="#sec3") Chat]
-            
-            div.tab-content
-                div#sec1.tab-pane.fade.in.active(role="tab-panel")
-                    h3 Call Today
-                    p Lorem ipsum dolor sit amet.
-                div#sec2.tab-pane.fade(role="tab-panel")
-                    h3 Schedule a Skype Consultation
-                    p Lorem ipsum dolor sit amet. Hey
-                div#sec3.tab-pane.fade(role="tab-panel")
-                    h3 Chat With Us
-                    p Lorem ipsum dolor sit amet. Hi
+	div.jumbotron
+		h2 Serving individuals, investors and employers worldwide. 
+		p FVALDEZLAW PC invests in technology in order to bring experienced immigration attorneys to you at affordable rates.  Technology breaks down the barriers of a traditional legal office and allows us to serve clients throughout the U.S. and the world.  Contact us to inquire about our virtual law office.
+		a.btn.btn-primary(href="#", role="button") Learn More
 
-    div.row
-        div.col-md-3
-            a(type="button", data-toggle="modal", data-target="#modal1")
-                div.service
-                    h3 Employers
-        div.col-md-3
-            a(type="button", data-toggle="modal", data-target="#modal2")
-                div.service
-                    h3 Investors &amp; Startups
-        div.col-md-3
-            a(type="button", data-toggle="modal", data-target="#modal3")
-                div.service
-                    h3 Investors &amp; Startups
-        div.col-md-3
-            a(type="button", data-toggle="modal", data-target="#modal4")
-                div.service
-                    h3 Investors &amp; Startups
-        div.col-md-3
-            a(type="button", data-toggle="modal", data-target="#modal5")
-                div.service
-                    h3 Investors &amp; Startups
-        div.col-md-3
-            a(type="button", data-toggle="modal", data-target="#modal6")
-                div.service
-                    h3 Investors &amp; Startups
-        div.col-md-3
-            a(type="button", data-toggle="modal", data-target="#modal7")
-                div.service
-                    h3 Investors &amp; Startups
-        div.col-md-3
-            a(type="button", data-toggle="modal", data-target="#modal8")
-                div.service
-                    h3 Investors &amp; Startups
-        
-    include _partials/modal1.jade
-    include _partials/modal2.jade
-    include _partials/modal3.jade
-    include _partials/modal4.jade
-    include _partials/modal5.jade
-    include _partials/modal6.jade
-    include _partials/modal7.jade
-    include _partials/modal8.jade
+	div.row
+		div.col-lg-6.col-md-6
+			p FVALDEZLAW PC embraces a new model for providing legal services.  We use technology to break the barriers posed by a more traditional legal office.  Technology allows us to serve clients in most immigration matters regardless of their location.  If you are open to working with attorneys in a more efficient and cost effective manner, please contact us to inquire if we can serve you through our virtual law office.
+		div.col-lg-6.col-md-6
+			ul.nav.nav-tabs.nav-justified(role="tablist")
+				li.active(role="presentation") #[a(data-toggle="tab", href="#sec1", role="tab", aria-controls="#sec1") Call Today]
+				li(role="presentation") #[a(data-toggle="tab", href="#sec2", role="tab", aria-controls="#sec2") Skype Consultaion]
+				li(role="presentation") #[a(data-toggle="tab", href="#sec3", role="tab", aria-controls="#sec3") Chat]
+
+			div.tab-content
+				div#sec1.tab-pane.fade.in.active(role="tab-panel")
+					h3 Call Today
+					p Lorem ipsum dolor sit amet.
+				div#sec2.tab-pane.fade(role="tab-panel")
+					h3 Schedule a Skype Consultation
+					p Lorem ipsum dolor sit amet. Hey
+				div#sec3.tab-pane.fade(role="tab-panel")
+					h3 Chat With Us
+					p Lorem ipsum dolor sit amet. Hi
+
+	div.row
+		.col-lg-12
+			h2.text-center Solutions For:
+		div.col-md-3
+			a(type="button", data-toggle="modal", data-target="#modal1")
+				div.service
+					h3 Employers
+		div.col-md-3
+			a(type="button", data-toggle="modal", data-target="#modal2")
+				div.service
+					h3 Investors &amp; Startups
+		div.col-md-3
+			a(type="button", data-toggle="modal", data-target="#modal3")
+				div.service
+					h3 Artists
+		div.col-md-3
+			a(type="button", data-toggle="modal", data-target="#modal4")
+				div.service
+					h3 Family
+		div.col-md-3
+			a(type="button", data-toggle="modal", data-target="#modal5")
+				div.service
+					h3 Waivers
+		div.col-md-3
+			a(type="button", data-toggle="modal", data-target="#modal6")
+				div.service
+					h3 Immigration Court/Detention
+		div.col-md-3
+			a(type="button", data-toggle="modal", data-target="#modal7")
+				div.service
+					h3 Executive Action
+		div.col-md-3
+			a(type="button", data-toggle="modal", data-target="#modal8")
+				div.service
+					h3 Citizeship
+
+	include _partials/modal1.jade
+	include _partials/modal2.jade
+	include _partials/modal3.jade
+	include _partials/modal4.jade
+	include _partials/modal5.jade
+	include _partials/modal6.jade
+	include _partials/modal7.jade
+	include _partials/modal8.jade
