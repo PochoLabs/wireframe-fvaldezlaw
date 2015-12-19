@@ -1,5 +1,37 @@
+link(rel="stylesheet" href="css/resources.css")
 include _partials/nav.jade
+
 .container
-	.row
-		.col-lg-12
-			h1 Services
+  .row
+    .col-lg-12
+      h1 Services
+  .row
+    h3 Complete the sentence to get the info you are looking for.
+    .container.demo-1
+      // Top Navigation
+      .main.clearfix
+        form#nl-form.nl-form
+          | I am a 
+          select(name='who')
+            option(value='person', selected='selected') person
+            option(value='us-citizen') US Citizen
+            option(value='non-us-citizen') Non US Citizen
+          br
+          | looking for 
+          select(name='needs')
+            option(value='consultation', selected='selected') guidance
+            option(value='permanent+visa') a Permanent Visa
+            option(value='temp+visa') a Temporary Visa
+            option(value='representation') Representation
+          | 					.
+          br
+          | You can 
+          select(name='contact-how')
+            option(value='call', selected='selected') call me
+            option(value='email') email me
+          | 					at 
+          input(name='contact-info', type='text', value='', placeholder='this email/number', data-subline='For example: <em>name@mail.com</em> or <em>555-5555</em>')
+          .nl-submit-wrap
+            button.nl-submit(type='submit') Find Info
+          .nl-overlay
+    // /container
