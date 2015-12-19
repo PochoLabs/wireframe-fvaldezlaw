@@ -10,21 +10,8 @@ div.container
     div.col-lg-6.col-md-6
       p FVALDEZLAW PC embraces a new model for providing legal services.  We use technology to break the barriers posed by a more traditional legal office.  Technology allows us to serve clients in most immigration matters regardless of their location.  If you are open to working with attorneys in a more efficient and cost effective manner, please contact us to inquire if we can serve you through our virtual law office.
     div.col-lg-6.col-md-6
-      ul.nav.nav-tabs.nav-justified(role="tablist")
-        li.active(role="presentation") #[a(data-toggle="tab", href="#sec1", role="tab", aria-controls="#sec1") Call Today]
-        li(role="presentation") #[a(data-toggle="tab", href="#sec2", role="tab", aria-controls="#sec2") Skype Consultaion]
-        li(role="presentation") #[a(data-toggle="tab", href="#sec3", role="tab", aria-controls="#sec3") Chat]
+      include _partials/contact.jade
 
-      div.tab-content
-        div#sec1.tab-pane.fade.in.active(role="tab-panel")
-          h3 Call Today
-          p Lorem ipsum dolor sit amet.
-        div#sec2.tab-pane.fade(role="tab-panel")
-          h3 Schedule a Skype Consultation
-          p Lorem ipsum dolor sit amet. Hey
-        div#sec3.tab-pane.fade(role="tab-panel")
-          h3 Chat With Us
-          p Lorem ipsum dolor sit amet. Hi
   .row
     .col-lg-12
       br
