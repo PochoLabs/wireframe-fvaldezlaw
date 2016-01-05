@@ -56,3 +56,37 @@ a.service{
 .plug{
 	margin: 10px;
 }
+
+.box-gray{
+	background: #ccc;
+	color: #444;
+	padding: 20px;
+	background: linear-gradient(rgba(200,200,200,1), rgba(200,200,200, 0));
+	margin-top: 20px;
+	& ul > li{
+		list-style: none;
+		display: inline-block;
+		padding: 3px 10px;
+		& > a{
+			color: #444;
+			font-weight: 800;
+		}
+	}
+}
+
+.staff-person{
+	margin-bottom: 40px;
+}
+
+.blog-post-item{
+	background: #444;
+	min-height: 300px;
+	margin-bottom: 20px;
+	& > h2{
+		color: #ccc;
+		min-height: 300px;
+		vertical-align: middle;
+		font-size: 4em;
+		padding-top: 110px;
+	}
+}
