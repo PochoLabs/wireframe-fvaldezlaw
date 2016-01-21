@@ -3,7 +3,12 @@ $(document).ready(function(){
 
 	if(domain === 'localhost'){
 		$('.home-nav > li > a').each(function(){
-			var newLink = $(this).attr('href').slice(22);
+			var newLink = $(this).attr('href').slice(21);
+			$(this).attr('href', newLink);
+		});
+
+		$('.navbar-brand').each(function(){
+			var newLink = $(this).attr('href').slice(21);
 			$(this).attr('href', newLink);
 		});
 	}
