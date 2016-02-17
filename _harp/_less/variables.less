@@ -14,9 +14,9 @@
 @gray-light:             lighten(@gray-base, 46.7%); // #777
 @gray-lighter:           lighten(@gray-base, 93.5%); // #eee
 
-@brand-primary:         #0F5070; // #337ab7
-@brand-secondary:       #96989A;
-@brand-success:         #5cb85c;
+@brand-primary:         #0F5070;
+@brand-secondary:       #e36e0f;
+@brand-success:         #e36e0f; //5cb85c
 @brand-info:            #5bc0de;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
@@ -43,8 +43,10 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic);
+
 @font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-serif:       'Playfair Display', Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
@@ -359,7 +361,7 @@
 
 // Basics of a navbar
 @navbar-height:                    50px;
-@navbar-margin-bottom:             @line-height-computed;
+@navbar-margin-bottom:             0px;
 @navbar-border-radius:             0px;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
@@ -367,12 +369,12 @@
 
 @navbar-default-color:             #fff;
 @navbar-default-bg:                @brand-primary;
-@navbar-default-border:            darken(@navbar-default-bg, -26.5%);
+@navbar-default-border:            lighten(@brand-primary, 20%);
 
 // Navbar links
-@navbar-default-link-color:                #777;
-@navbar-default-link-hover-color:          #333;
-@navbar-default-link-hover-bg:             transparent;
+@navbar-default-link-color:                #fff;
+@navbar-default-link-hover-color:          @link-hover-color;
+@navbar-default-link-hover-bg:             lighten(@brand-primary, 20%);
 @navbar-default-link-active-color:         #555;
 @navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
 @navbar-default-link-disabled-color:       #ccc;

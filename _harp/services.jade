@@ -1,89 +1,87 @@
 link(rel="stylesheet" href="css/resources.css")
-include _partials/nav.jade
-
 .container
-  .row
-    .col-lg-12
-      h1 Services
-  .row
-    h3 Complete the sentence to get the info you are looking for.
-    .container.demo-1
-      // Top Navigation
-      .main.clearfix
-        form#nl-form.nl-form
-          | I am a 
-          select(name='who')
-            option(value='person', selected='selected') person
-            option(value='us-citizen') US Citizen
-            option(value='non-us-citizen') Non US Citizen
-          br
-          | looking for 
-          select(name='needs')
-            option(value='consultation', selected='selected') guidance
-            option(value='permanent+visa') a Permanent Visa
-            option(value='temp+visa') a Temporary Visa
-            option(value='representation') Representation
-          | 					.
-          br
-          | You can 
-          select(name='contact-how')
-            option(value='call', selected='selected') call me
-            option(value='email') email me
-          | 					at 
-          input(name='contact-info', type='text', value='', placeholder='this email/number', data-subline='For example: <em>name@mail.com</em> or <em>555-5555</em>')
-          .nl-submit-wrap
-            button.nl-submit(type='submit') Find Info
-          .nl-overlay
+	.row
+		.col-lg-12
+			h1 Services
+	.row
+		h3 Complete the sentence to get the info you are looking for.
+		.container.demo-1
+			// Top Navigation
+			.main.clearfix
+				form#nl-form.nl-form
+					| I am a 
+					select(name='who')
+						option(value='person', selected='selected') person
+						option(value='us-citizen') US Citizen
+						option(value='non-us-citizen') Non US Citizen
+					br
+					| looking for 
+					select(name='needs')
+						option(value='consultation', selected='selected') guidance
+						option(value='permanent+visa') a Permanent Visa
+						option(value='temp+visa') a Temporary Visa
+						option(value='representation') Representation
+					| 					.
+					br
+					| You can 
+					select(name='contact-how')
+						option(value='call', selected='selected') call me
+						option(value='email') email me
+					| 					at 
+					input(name='contact-info', type='text', value='', placeholder='this email/number', data-subline='For example: <em>name@mail.com</em> or <em>555-5555</em>')
+					.nl-submit-wrap
+						button.nl-submit(type='submit') Find Info
+					.nl-overlay
 
-  div.row
-    .col-lg-12
-      h2.text-center Solutions For:
-    div.col-md-3
-      a(type="button", data-toggle="modal", data-target="#modal1")
-        div.service(style="background:url('http://s20.postimg.org/g7pxmgwe5/16248851160_87d8572f80_z.jpg');")
-          .service-box
-            h3 Employers
-    div.col-md-3
-      a(type="button", data-toggle="modal", data-target="#modal2")
-        div.service(style="background:url('http://s20.postimg.org/5m62agq2l/6881485010_da66a9b933_z.jpg');")
-          .service-box
-            h3 Investors &amp; Startups
-    div.col-md-3
-      a(type="button", data-toggle="modal", data-target="#modal3")
-        div.service(style="background:url('http://s20.postimg.org/irlkgkjy5/artists_558260_640.jpg');")
-          .service-box
-            h3 Artists
-    div.col-md-3
-      a(type="button", data-toggle="modal", data-target="#modal4")
-        div.service(style="background:url('http://s20.postimg.org/vke9u8kxp/family_730320_640.jpg');")
-          .service-box
-            h3 Family
-    div.col-md-3
-      a(type="button", data-toggle="modal", data-target="#modal5")
-        div.service(style="background:url('http://s20.postimg.org/c3tk7pptp/Waiver_Forms.jpg');")
-          .service-box
-            h3 Waivers
-    div.col-md-3
-      a(type="button", data-toggle="modal", data-target="#modal6")
-        div.service(style="background:url('http://s20.postimg.org/76fzmlnul/courtroom.jpg');")
-          .service-box
-            h3 Immigration Court/Detention
-    div.col-md-3
-      a(type="button", data-toggle="modal", data-target="#modal7")
-        div.service(style="background:url('http://s20.postimg.org/y83q4ldz1/Obama_signing_Kagan_s_commission.jpg');")
-          .service-box
-            h3 Executive Action
-    div.col-md-3
-      a(type="button", data-toggle="modal", data-target="#modal8")
-        div.service(style="background:url('http://s20.postimg.org/tkxo2tqm5/5021872334_0d2b372091_o.jpg');")
-          .service-box
-            h3 Citizenship
+	div.row
+		.col-lg-12
+			h2.text-center Solutions For:
+		div.col-md-3
+			a(type="button", data-toggle="modal", data-target="#modal1")
+				div.service(style="background:url('http://s20.postimg.org/g7pxmgwe5/16248851160_87d8572f80_z.jpg');")
+					.service-box
+						h3 Employers
+		div.col-md-3
+			a(type="button", data-toggle="modal", data-target="#modal2")
+				div.service(style="background:url('http://s20.postimg.org/5m62agq2l/6881485010_da66a9b933_z.jpg');")
+					.service-box
+						h3 Investors &amp; Startups
+		div.col-md-3
+			a(type="button", data-toggle="modal", data-target="#modal3")
+				div.service(style="background:url('http://s20.postimg.org/irlkgkjy5/artists_558260_640.jpg');")
+					.service-box
+						h3 Artists
+		div.col-md-3
+			a(type="button", data-toggle="modal", data-target="#modal4")
+				div.service(style="background:url('http://s20.postimg.org/vke9u8kxp/family_730320_640.jpg');")
+					.service-box
+						h3 Family
+		div.col-md-3
+			a(type="button", data-toggle="modal", data-target="#modal5")
+				div.service(style="background:url('http://s20.postimg.org/c3tk7pptp/Waiver_Forms.jpg');")
+					.service-box
+						h3 Waivers
+		div.col-md-3
+			a(type="button", data-toggle="modal", data-target="#modal6")
+				div.service(style="background:url('http://s20.postimg.org/76fzmlnul/courtroom.jpg');")
+					.service-box
+						h3 Immigration Court/Detention
+		div.col-md-3
+			a(type="button", data-toggle="modal", data-target="#modal7")
+				div.service(style="background:url('http://s20.postimg.org/y83q4ldz1/Obama_signing_Kagan_s_commission.jpg');")
+					.service-box
+						h3 Executive Action
+		div.col-md-3
+			a(type="button", data-toggle="modal", data-target="#modal8")
+				div.service(style="background:url('http://s20.postimg.org/tkxo2tqm5/5021872334_0d2b372091_o.jpg');")
+					.service-box
+						h3 Citizenship
 
-  include _partials/modal1.jade
-  include _partials/modal2.jade
-  include _partials/modal3.jade
-  include _partials/modal4.jade
-  include _partials/modal5.jade
-  include _partials/modal6.jade
-  include _partials/modal7.jade
-  include _partials/modal8.jade
+	include _partials/modal1.jade
+	include _partials/modal2.jade
+	include _partials/modal3.jade
+	include _partials/modal4.jade
+	include _partials/modal5.jade
+	include _partials/modal6.jade
+	include _partials/modal7.jade
+	include _partials/modal8.jade

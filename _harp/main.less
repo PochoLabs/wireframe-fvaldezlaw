@@ -1,132 +1,171 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic);
+
+@brand-primary:         #0F5070;
+@brand-secondary:       #e36e0f;
+
 body {
-        padding-top: 10px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-
-#homejb{
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+  /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  font-family: 'Playfair Display', Georgia, "Times New Roman", Times, serif;
+	background: transparent url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/fabric_of_squares_gray.png") repeat scroll 0% 0%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display', Georgia, "Times New Roman", Times, serif;
 }
 
-.img-center{
-	margin: 0 auto;
+// Header
+
+.site-header{
+	margin: 20px auto;
 }
 
-.contact-btn{
-	margin-top: 20px;
+.header-feature{
+	margin: 10px auto;
 }
 
-.blue{
-	font-weight: 500;
-	font-style: italic;
+#homejb {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	padding: 40px;
+	margin: 0px;
+}
+.img-center {
+  margin: 0 auto;
 }
 
-.big{
-	font-size: 2em;
+
+
+.contact-btn {
+  margin-top: 20px;
 }
-.service{
-    background: #3c3c3c;
-    height: 200px;
-    margin: 20px auto;
-    cursor: pointer;
-		background-size:contain;
-		background-repeat:no-repeat;
-		background-position: center;
+.blue {
+  font-weight: 500;
+  font-style: italic;
+}
+.big {
+  font-size: 2em;
 }
 
-.service-box{
-	background: rgba(0, 0, 0, 0.6);
-	width: 100%;
-	height: 100%;
-}
+// Service Boxes
 
-.service h3{
-    font-size: 1.3em;
-    padding-top: 4.5em;
-    padding-bottom: 50px;
-    text-align: center;
-    color: #ccc;
-}
-a.service{
 
-    text-align: center;
-    cursor: pointer;
-    height: 100%;
-    width: 100%;
+.service {
+  background: #3c3c3c;
+  height: 200px;
+  margin: 20px auto;
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
+.service-box {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+.service h3 {
+  font-size: 1.3em;
+  padding-top: 4.5em;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #ccc;
+}
+a.service {
+  text-align: center;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
 // Virtual Office
-
-.big-text{
-	color: gray;
-	font-size: 3.3em;
-	font-style: italic;
+.big-text {
+  color: gray;
+  font-size: 3.3em;
+  font-style: italic;
+}
+.plug {
+  margin: 10px;
+}
+.box-gray {
+  background: #ccc;
+  color: #444;
+  padding: 20px;
+  background: linear-gradient(rgba(200,200,200,1), rgba(200,200,200, 0));
+  margin-top: 20px;
+  & ul > li {
+    list-style: none;
+    display: inline-block;
+    padding: 3px 10px;
+    & > a {
+      color: #444;
+      font-weight: 800;
+    }
+  }
+}
+.staff-person {
+  margin-bottom: 40px;
+}
+.blog-post-item {
+  background: #444;
+  min-height: 300px;
+  margin-bottom: 20px;
+  & > h2 {
+    color: #ccc;
+    min-height: 300px;
+    vertical-align: middle;
+    font-size: 4em;
+    padding-top: 110px;
+  }
+}
+.wire-box {
+  background: #444;
+  height: 200px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+  & h2 {
+    color: #fff;
+    position: relative;
+    top: 45%;
+    text-align: center;
+  }
+}
+.modal-toc {
+  & li {
+    list-style: outside none none;
+    & strong {
+      font-size: 1.2em;
+      margin-left: -10px;
+    }
+  }
+}
+.tab-pane > .row {
+  padding: 10px 10px 30px;
+  margin-bottom: 40px;
 }
 
-.plug{
-	margin: 10px;
-}
+// Footer
 
-.box-gray{
-	background: #ccc;
-	color: #444;
-	padding: 20px;
-	background: linear-gradient(rgba(200,200,200,1), rgba(200,200,200, 0));
-	margin-top: 20px;
-	& ul > li{
-		list-style: none;
-		display: inline-block;
-		padding: 3px 10px;
-		& > a{
-			color: #444;
-			font-weight: 800;
-		}
-	}
-}
-
-.staff-person{
-	margin-bottom: 40px;
-}
-
-.blog-post-item{
-	background: #444;
-	min-height: 300px;
-	margin-bottom: 20px;
-	& > h2{
-		color: #ccc;
-		min-height: 300px;
-		vertical-align: middle;
-		font-size: 4em;
-		padding-top: 110px;
-	}
-}
-
-.wire-box{
-	background: #444;
-	height: 200px;
+footer{
+	background: @brand-primary;
+	padding: 25px;
 	width: 100%;
-	position: relative;
-	margin-bottom: 20px;
-	& h2{
+
+	& .site-info a{
 		color: #fff;
-		position: relative;
-		top: 45%;
-		text-align: center;
 	}
 }
 
-.modal-toc{
-	& li{
-		list-style: outside none none;
-		& strong{
-			font-size: 1.2em;
-			margin-left: -10px;
-		}
-	}
+// Color Utilities
+
+.white-bg{
+	background: #fff;
 }
 
-.tab-pane > .row{
-	padding: 10px 10px 30px 10px;
-	margin-bottom: 40px;
+.no-padding{
+	padding: 0px;
 }
