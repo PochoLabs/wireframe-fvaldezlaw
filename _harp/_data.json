@@ -1,0 +1,22 @@
+{
+  "index": {
+    "layout": "_layout",
+    "title": "index"
+  },
+  "about": {
+    "layout": "_layout-normal",
+    "title": "about"
+  },
+  "services": {
+    "layout": "_layout-normal",
+    "title": "about"
+  },
+  "news": {
+    "layout": "_layout-normal",
+    "title": "about"
+  },
+  "virtual": {
+    "layout": "_layout-normal",
+    "title": "about"
+  }
+}
