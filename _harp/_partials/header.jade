@@ -8,41 +8,50 @@ html(lang="en")
 		link(rel="stylesheet" href="css/font-awesome.css")
 		link(rel="stylesheet" href="main.css")
 	body
-		.container.white-bg
-			//.container
-			.row
-				.col-md-6
-					header#masthead.site-header(role='banner')
-						.row
-							.site-header-inner.col-sm-12
-								.site-branding
-									img.img-responsive(src="img/logo-fvaldez-long.png", alt="")
+		.container-fluid.feature-bg
+			.container
+				.row
+					.col-md-6
+						header#masthead.site-header(role='banner')
+							.row
+								.site-header-inner.col-sm-12
+									.site-branding
+										img.img-responsive(src="img/logo-fvaldez-long.png", alt="")
 
-				.col-md-6
-					.header-feature
-						p.lead
-							| Call now for a consultaion over the phone: 555-555-5555
-						a.btn.btn-success.btn-block(href='#') Call Now!
 
-		.container(style="padding-left: 0px; padding-right: 0px;")
-			nav.navbar.navbar-default(role="navigation")
-				div.container
-					div.navbar-header
-						button.navbar-toggle(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1")
-							span.sr-only Toggle navigation
-							span.icon-bar
-							span.icon-bar
-							span.icon-bar
 
-					div.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
-						ul.nav.navbar-nav.home-nav
-							li
-								a(href="/wireframe-fvaldezlaw/") Home
-							li
-								a(href="/wireframe-fvaldezlaw/about.html") About
-							li
-								a(href="/wireframe-fvaldezlaw/services.html") Services
-							li
-								a(href="/wireframe-fvaldezlaw/news.html") News
-							li
-								a(href="/wireframe-fvaldezlaw/virtual.html") Virtual Office
+					.col-md-6(style="padding-left: 0px; padding-right: 0px;")
+						nav.navbar.navbar-default(role="navigation")
+							div.container
+								div.navbar-header
+									button.navbar-toggle(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1")
+										span.sr-only Toggle navigation
+										span.icon-bar
+										span.icon-bar
+										span.icon-bar
+
+								div.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
+									ul.nav.navbar-nav.home-nav
+										li
+											a(href="/wireframe-fvaldezlaw/") Home
+										li
+											a(href="/wireframe-fvaldezlaw/about.html") About
+										li
+											a(href="/wireframe-fvaldezlaw/services.html") Services
+										li
+											a(href="/wireframe-fvaldezlaw/news.html") News
+										li
+											a(href="/wireframe-fvaldezlaw/virtual.html") Virtual Office
+
+
+			div.container.no-padding
+				div#homejb
+
+					h2 Serving individuals, investors and employers worldwide. 
+					p FValdezLaw PC has the experience to provide quality  immigration law services to clients all over the world.  FValdezLaw PC is based in Houston, Texas.  Our use of web based applications also gives FValdezLaw the ability and agility to serve clients  online in their own homes and workplaces throughout the United States and beyond.  Whether you are looking for a traditional legal office or you want to break down barriers and go virtual, please contact us so that we can help.  
+					a.btn.btn-primary(href="#", role="button") Learn More
+
+			div.container.home-contact
+				div.row
+					div.col-lg-12.col-md-12
+						include contact.jade
