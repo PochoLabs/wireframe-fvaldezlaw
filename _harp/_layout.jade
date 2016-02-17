@@ -1,14 +1,28 @@
 doctype
 html(lang="en")
-  head
-    title Fvaldez
-    link(rel="stylesheet" href="main.css")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
-  body
-    != yield
+	head
+		title Fvaldez Law
+		meta(name="viewport", content="width=device-width, initial-scale=1")
 
-    script(src="js/jquery-2.1.4.js")
-    script(src="js/bootstrap.min.js")
-    script(src="js/main.js")
-    script(src="js/nlform.js")
-    script(src="js/resources.js")
+		link(rel="stylesheet" href="css/bootstrap.css")
+		link(rel="stylesheet" href="css/font-awesome.css")
+		link(rel="stylesheet" href="main.css")
+	body
+		!= yield
+
+		footer#colophon.site-footer(role='contentinfo')
+			.container
+				.row
+					.site-footer-inner.col-sm-12
+						.site-info
+							a(href='http://wordpress.org/', title='A Semantic Personal Publishing Platform', rel='generator') Proudly powered by WordPress
+							span.sep  
+							a.credits(href='http://pocholabs.com/', target='_blank', title='Themes and Plugins developed by PochoLabs', alt='Themes and Plugins developed by Celso Mireles at PochoLabs') Themes and Plugins developed by PochoLabs. 
+						// close .site-info
+						// close .container
+
+		script(src="js/jquery-2.1.4.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/main.js")
+		script(src="js/nlform.js")
+		script(src="js/resources.js")

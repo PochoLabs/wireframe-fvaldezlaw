@@ -1,10 +1,13 @@
-@import url('_less/bootstrap.less');
-@import url('_less/fa/font-awesome.less');
-
 body {
-        padding-top: 70px;
+        padding-top: 10px;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     }
+
+#homejb{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 .img-center{
 	margin: 0 auto;
@@ -25,14 +28,22 @@ body {
 .service{
     background: #3c3c3c;
     height: 200px;
-    padding: 20px;
     margin: 20px auto;
     cursor: pointer;
+		background-size:contain;
+		background-repeat:no-repeat;
+		background-position: center;
+}
+
+.service-box{
+	background: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 100%;
 }
 
 .service h3{
     font-size: 1.3em;
-    padding-top: 50px;
+    padding-top: 4.5em;
     padding-bottom: 50px;
     text-align: center;
     color: #ccc;
@@ -89,4 +100,33 @@ a.service{
 		font-size: 4em;
 		padding-top: 110px;
 	}
+}
+
+.wire-box{
+	background: #444;
+	height: 200px;
+	width: 100%;
+	position: relative;
+	margin-bottom: 20px;
+	& h2{
+		color: #fff;
+		position: relative;
+		top: 45%;
+		text-align: center;
+	}
+}
+
+.modal-toc{
+	& li{
+		list-style: outside none none;
+		& strong{
+			font-size: 1.2em;
+			margin-left: -10px;
+		}
+	}
+}
+
+.tab-pane > .row{
+	padding: 10px 10px 30px 10px;
+	margin-bottom: 40px;
 }
