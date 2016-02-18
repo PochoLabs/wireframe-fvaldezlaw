@@ -17,7 +17,9 @@ h6 {
   font-family: 'Playfair Display', Georgia, "Times New Roman", Times, serif;
 }
 
+// ==============================
 // Header
+// ==============================
 
 .site-header{
 	margin: 20px auto;
@@ -60,6 +62,10 @@ h6 {
 	}
 }
 
+// ==============================
+// Navigation Menu
+// ==============================
+
 li.separator{
 	border-left: 1px solid rgba(255,255,255,0.2);
 	width: 1px;
@@ -69,6 +75,20 @@ li.separator{
 
 .header-feature{
 	margin: 10px auto;
+}
+
+// Make Navbar centered in md view
+
+@media (min-width: 768px) and ( max-width: 993px) {
+    .nav.navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar-collapse {
+      margin: 0px 15%;
+    }
 }
 
 #homejb {
@@ -104,7 +124,9 @@ li.separator{
 	margin: 30px auto;
 }
 
+// ==============================
 // Service Boxes
+// ==============================
 
 
 .service {
@@ -201,7 +223,9 @@ a.service {
   margin-bottom: 40px;
 }
 
+// ==============================
 // Footer
+// ==============================
 
 footer{
 	background: @brand-primary;
@@ -213,7 +237,9 @@ footer{
 	}
 }
 
+// ==============================
 // Color Utilities
+// ==============================
 
 .white-bg{
 	background: #fff;
