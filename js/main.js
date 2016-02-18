@@ -13,4 +13,12 @@ $(document).ready(function(){
 		});
 	}
 
+	// Make .feature-bg be full height
+
+	var wHeight = $(window).height();
+
+	console.log("Window Height is: " + wHeight);
+
+	$('.feature-gradient').css('min-height', wHeight + 'px');
+
 });
