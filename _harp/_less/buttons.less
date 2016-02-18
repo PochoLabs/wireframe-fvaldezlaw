@@ -76,6 +76,10 @@
 .btn-success {
   .button-variant(@btn-success-color; @btn-success-bg; @btn-success-border);
 }
+
+.btn-cta {
+  .button-variant(@btn-success-color; lighten(@btn-success-bg, 10%); lighten(@btn-success-border, 10%));
+}
 // Info appears as blue-green
 .btn-info {
   .button-variant(@btn-info-color; @btn-info-bg; @btn-info-border);
