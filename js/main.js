@@ -37,4 +37,11 @@ $(document).ready(function(){
 	    });
 	});
 
+	// Animate Services on Hover
+	$('.service').hover(function(){
+		$(this).addClass('animated').addClass('pulse');
+	}, function(){
+		$(this).removeClass('animated').removeClass('pulse');
+	});
+
 });

@@ -11,46 +11,34 @@
 			.big-text
 				p We Stay Ahead...
 	.row
-		.col-sm-4
+		.col-sm-6
 			.plug
 				a(data-toggle="tab", href="#sec1", role="tab", aria-controls="#sec1")
 					img(src="http://s20.postimg.org/9p2lq17gd/call.jpg", class="img-responsive img-circle img-center")
-		.col-sm-4
+		.col-sm-6
 			.plug
 				a(data-toggle="tab", href="#sec2", role="tab", aria-controls="#sec2")
 					img(src="http://s20.postimg.org/3peumdmnx/skype.jpg", class="img-responsive img-circle img-center")
-		.col-sm-4
-			.plug
-				a(data-toggle="tab", href="#sec3", role="tab", aria-controls="#sec3")
-					img(src="http://s20.postimg.org/4syyyc7b1/chat.jpg", class="img-responsive img-circle img-center")
-	.row
-		//- ul.nav.nav-tabs.nav-justified(role="tablist")
-		//-   li.active(role="presentation") #[a(data-toggle="tab", href="#sec1", role="tab", aria-controls="#sec1") #[i.fa.fa-phone-square] Call Today]
-		//-   li(role="presentation") #[a(data-toggle="tab", href="#sec2", role="tab", aria-controls="#sec2") #[i.fa.fa-skype] Skype Consultaion]
-		//-   li(role="presentation") #[a(data-toggle="tab", href="#sec3", role="tab", aria-controls="#sec3") #[i.fa.fa-comment] Chat]
 
-		div.tab-content
-			div#sec1.tab-pane.fade.in.active(role="tab-panel")
-				.row
-					.col-sm-6
-						h3 Let's talk
-						p We would love to know how we can help.
-					.col-sm-6
-						button.btn.btn-primary.btn-lg.btn-block.contact-btn(type="button") Call Us
-			div#sec2.tab-pane.fade(role="tab-panel")
-				.row
-					.col-sm-6
-						h3 What's your Skype Name?
-						p Ours is '_____'. Call us on Skype and we can have a consultation over video.
-					.col-sm-6
-						button.btn.btn-primary.btn-lg.btn-block.contact-btn(type="button") Skype Us
-			div#sec3.tab-pane.fade(role="tab-panel")
-				.row
-					.col-sm-6
-						h3 Legal Chatroom
-						p We get it. You a call or video chat may seem like a big commitment. If we are online, we'll be glad to start a dialogue over chat.
-					.col-sm-6
-						button.btn.btn-primary.btn-lg.btn-block.contact-btn(type="button") Chat With Us
+	.pad-vertical
+		.row.blue-bg
+			div.tab-content
+				div#sec1.tab-pane.fade.in.active(role="tab-panel")
+					.row
+						.col-sm-9
+							h3 Let's talk
+							p We would love to know how we can help.
+							a.btn.btn-cta.btn-lg.contact-btn.btn-block(href="#", target="_blank") Call Us
+						.col-sm-3
+							img.img-responsive(src="http://placehold.it/250x250", alt="")
+				div#sec2.tab-pane.fade(role="tab-panel")
+					.row
+						.col-sm-9
+							h3 Let's start over email
+							p Talking to us is very easy. Let's start a conversation over email.
+							a.btn.btn-cta.btn-lg.contact-btn.btn-block(href="mailto:test@test.com", target="_blank") Email Us
+						.col-sm-3
+							img.img-responsive(src="http://placehold.it/250x250", alt="")
 
 
 		//include _partials/contact.jade

@@ -3,6 +3,8 @@
 @brand-primary:         #0F5070;
 @brand-secondary:       #e36e0f;
 
+@border-box-radius: 15px;
+
 body {
   /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
   font-family: 'Playfair Display', Georgia, "Times New Roman", Times, serif;
@@ -15,11 +17,34 @@ h4,
 h5,
 h6 {
   font-family: 'Playfair Display', Georgia, "Times New Roman", Times, serif;
+	font-weight: bolder;
+	color: @brand-primary;
+}
+p{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.blue-bg{
+	background: @brand-primary;
+	color: #fff;
+}
+
+.pad-vertical{
+	margin: 10px 0px;
+
 }
 
 // ==============================
 // Header
 // ==============================
+
+.cbp-af-header-shrink{
+	background: @brand-primary;
+	-webkit-transition: all 0.8s; // Chrome
+  -moz-transition: all 0.8s; // Mozilla
+  -o-transition: all 0.8s; // Opera
+  transition: all 0.8s;
+}
 
 .site-header{
 	margin: 20px auto;
@@ -107,9 +132,12 @@ li.separator{
 	padding: 40px;
 	margin: 0px;
 	max-width: 800px;
-	& h2, p{
+	& p{
 		color: #fff;
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	& h2{
+		color: #fff;
 	}
 }
 .img-center {
@@ -137,6 +165,12 @@ li.separator{
 // Service Boxes
 // ==============================
 
+#solutions{
+	& h2{
+		font-weight: bolder;
+		color: @brand-primary;
+	}
+}
 
 .service {
   background: #3c3c3c;
@@ -146,25 +180,29 @@ li.separator{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+	border-radius: @border-box-radius;
+	-moz-border-radius: @border-box-radius;
+	-o-border-radius: @border-box-radius;
+	-webkit-border-radius: @border-box-radius;
+	& h3{
+		font-size: 1.6em;
+	  padding-top: 2.5em;
+	  padding-bottom: 50px;
+	  text-align: center;
+	  color: #fff;
+	}
 }
 .service-box {
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
+	border-radius: @border-box-radius;
+	-moz-border-radius: @border-box-radius;
+	-o-border-radius: @border-box-radius;
+	-webkit-border-radius: @border-box-radius;
 }
-.service h3 {
-  font-size: 1.3em;
-  padding-top: 4.5em;
-  padding-bottom: 50px;
-  text-align: center;
-  color: #ccc;
-}
-a.service {
-  text-align: center;
-  cursor: pointer;
-  height: 100%;
-  width: 100%;
-}
+
+
 // Virtual Office
 .big-text {
   color: gray;
