@@ -44,4 +44,25 @@ $(document).ready(function(){
 		$(this).removeClass('animated').removeClass('pulse');
 	});
 
+	// Twitter feed
+	twitterFetcher.fetch({
+  "id": '705913950752210944',
+  "domId": 'twitter-fetch',
+  "maxTweets": 3,
+  "enableLinks": true
+});
+
+	// Twitter slider
+
+	$('#twitter-fetch').delay(2000).queue(function(){
+		$( '.simple-slider > ul' ).owlCarousel({
+					autoPlay: 7000,
+					stopOnHover: true,
+					slideSpeed: 200,
+					paginationSpeed: 800,
+					rewindSpeed: 800,
+					singleItem: true
+				});
+	});
+
 });
