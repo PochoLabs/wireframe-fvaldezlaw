@@ -55,6 +55,7 @@
 body {
   /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
   font-family: 'Playfair Display', Georgia, "Times New Roman", Times, serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background: transparent url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/fabric_of_squares_gray.png") repeat scroll 0% 0%;
 }
 h1,
@@ -64,6 +65,7 @@ h4,
 h5,
 h6 {
   font-family: 'Playfair Display', Georgia, "Times New Roman", Times, serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: bolder;
 	color: @brand-primary;
 }
@@ -86,7 +88,7 @@ p{
 // ==============================
 
 .cbp-af-header-shrink{
-	background: @brand-primary;
+	background: darken(@brand-primary, 14%);
 	-webkit-transition: all 0.8s; // Chrome
   -moz-transition: all 0.8s; // Mozilla
   -o-transition: all 0.8s; // Opera
@@ -181,15 +183,18 @@ li.separator{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-	padding: 40px;
+	padding: 80px 40px 30px;
 	margin: 0px;
 	max-width: 800px;
 	& p{
 		color: #fff;
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 1.4em;
+    font-weight: 100;
 	}
 	& h2{
 		color: #fff;
+		font-size: 2.3em;
 	}
 }
 .img-center {
@@ -330,16 +335,19 @@ li.separator{
 // ==============================
 
 footer{
-	background: @brand-primary;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: darken(@brand-primary, 14%);
 	padding: 180px 25px 50px 25px;
 	width: 100%;
 	color: #fff;
 
 	& a{
 		color: #fff;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
 	& h5{
 		color: #fff;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
 	& .social-media{
 		& > li{
@@ -379,30 +387,15 @@ footer{
 }
 
 .feature-gradient{
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0f5070+0,13828e+46,e59b80+100 */
-// background: rgb(15,80,112); /* Old browsers */
-// background: -moz-linear-gradient(-45deg, rgba(15,80,112,1) 0%, rgba(19,130,142,0.8) 46%, rgba(246,178,123,0.8) 100%); /* FF3.6-15 */
-// background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(15,80,112,1)), color-stop(46%,rgba(19,130,142,0.8)), color-stop(100%,rgba(246,178,123,0.8))); /* Chrome4-9,Safari4-5 */
-// background: -webkit-linear-gradient(-45deg, rgba(15,80,112,1) 0%,rgba(19,130,142,0.8) 46%,rgba(246,178,123,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
-// background: -o-linear-gradient(-45deg, rgba(15,80,112,1) 0%,rgba(19,130,142,0.8) 46%,rgba(246,178,123,0.8) 100%); /* Opera 11.10-11.50 */
-// background: -ms-linear-gradient(-45deg, rgba(15,80,112,1) 0%,rgba(19,130,142,0.8) 46%,rgba(246,178,123,0.8) 100%); /* IE10 preview */
-// background: linear-gradient(135deg, rgba(15,80,112,1) 0%,rgba(19,130,142,0.8) 46%,rgba(246,178,123,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f5070', endColorstr='#f6b27b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-//
-
-
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0f5070+12,96989a+93 */
-
-
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0f5070+6,96989a+50,0f5070+100 */
-background: rgb(15,80,112); /* Old browsers */
-background: -moz-linear-gradient(-45deg, rgba(15,80,112,1) 12%, rgba(150,152,154,0.8) 70%, rgba(15,80,112,0.75) 100%); /* FF3.6-15 */
-background: -webkit-gradient(linear, left top, right bottom, color-stop(12%,rgba(15,80,112,1)), color-stop(70%,rgba(150,152,154,0.8)), color-stop(100%,rgba(15,80,112,0.75))); /* Chrome4-9,Safari4-5 */
-background: -webkit-linear-gradient(-45deg, rgba(15,80,112,1) 12%,rgba(150,152,154,0.8) 70%,rgba(15,80,112,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
-background: -o-linear-gradient(-45deg, rgba(15,80,112,1) 12%,rgba(150,152,154,0.8) 70%,rgba(15,80,112,0.75) 100%); /* Opera 11.10-11.50 */
-background: -ms-linear-gradient(-45deg, rgba(15,80,112,1) 12%,rgba(150,152,154,0.8) 70%,rgba(15,80,112,0.75) 100%); /* IE10 preview */
-background: linear-gradient(135deg, rgba(15,80,112,1) 12%,rgba(150,152,154,0.8) 70%,rgba(15,80,112,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f5070', endColorstr='#0f5070',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+background: rgba(6, 41, 59, 1); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(6, 41, 59, 0.96) 12%, rgba(29, 29, 29, 0.8) 70%, rgba(6, 41, 59, .9) 100%); /* FF3.6-15 */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(12%,rgba(6, 41, 59, 1)), color-stop(70%,rgba(150,152,154,0.8)), color-stop(100%,rgba(15,80,112,0.9))); /* Chrome4-9,Safari4-5 */
+background: -webkit-linear-gradient(-45deg, rgba(6, 41, 59, 0.96) 12%,rgba(29, 29, 29, 0.8) 70%,rgba(6, 41, 59, .9) 100%); /* Chrome10-25,Safari5.1-6 */
+background: -o-linear-gradient(-45deg, rgba(6, 41, 59, 0.96) 12%,rgba(29, 29, 29, 0.8) 70%9 100%); /* Opera 11.10-11.50 */
+background: -ms-linear-gradient(-45deg, rgba(6, 41, 59, 0.96) 12%,rgba(29, 29, 29, 0.8) 70%,rgba(6, 41, 59, .9) 100%); /* IE10 preview */
+background: linear-gradient(135deg, rgba(6, 41, 59, 0.96) 12%,rgba(29, 29, 29, 0.8) 70%,rgba(6, 41, 59, .9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#032232', endColorstr='#2e2e2e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 
 }
@@ -413,50 +406,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f5070', end
 
 // Angled sections
 
-.angle{
-	margin: 0 -50px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  -ms-transform-origin: left center;
-  transform-origin: left center;
-	.content{
-		padding: 130px 100px 250px 100px;
-	}
-	&:nth-child(even){
-		background: #fff;
-
-		-webkit-transform: rotate(3deg);
-	  -moz-transform: rotate(3deg);
-	  -o-transform: rotate(3deg);
-	  -ms-transform: rotate(3deg);
-	  transform: rotate(3deg);
-	  margin-top: -220px;
-		& .content{
-			-webkit-transform: rotate(-3deg);
-	    -moz-transform: rotate(-3deg);
-	    -o-transform: rotate(-3deg);
-	    -ms-transform: rotate(-3deg);
-	    transform: rotate(-3deg);
-
-		}
-	}
-	&:nth-child(odd){
-		
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    transform: rotate(-3deg);
-		& .content{
-			-webkit-transform: rotate(3deg);
-	    -moz-transform: rotate(3deg);
-	    -o-transform: rotate(3deg);
-	    -ms-transform: rotate(3deg);
-	    transform: rotate(3deg);
-
-		}
-	}
+.section{
+	padding: 50px 0px;
 }
 
 .c2a{
@@ -468,15 +419,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f5070', end
 
 .tweet-content{
 	font-family: 'Playfair Display', Georgia, "Times New Roman", Times, serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.4em;
 }
 
 .slide-row{
 	margin-left: 10px;
 	margin-right: 10px;
-}
-
-#twitter-fetch > ul > li{
-    list-style:none;
-
 }

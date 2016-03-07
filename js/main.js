@@ -51,7 +51,7 @@ $(document).ready(function(){
   "id": '705913950752210944',
   //"domId": 'twitter-fetch',
 	"dataOnly": true,
-  "maxTweets": 3,
+  "maxTweets": 5,
   "enableLinks": false,
 	"customCallback": createTweets
 });
