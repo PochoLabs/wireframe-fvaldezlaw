@@ -44,7 +44,9 @@ $(document).ready(function(){
 		$(this).removeClass('animated').removeClass('pulse');
 	});
 
-	// Twitter feed
+	// Twitter feed  <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/ernestofonseca" data-widget-id="615588154955821056">Tweets by @ernestofonseca</a>
+
+
 	twitterFetcher.fetch({
   "id": '705913950752210944',
   "domId": 'twitter-fetch',
@@ -64,5 +66,7 @@ $(document).ready(function(){
 					singleItem: true
 				});
 	});
+
+	$('.full').anystretch();
 
 });
