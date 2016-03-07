@@ -333,9 +333,32 @@ footer{
 	background: @brand-primary;
 	padding: 180px 25px 50px 25px;
 	width: 100%;
+	color: #fff;
 
-	& .site-info a{
+	& a{
 		color: #fff;
+	}
+	& h5{
+		color: #fff;
+	}
+	& .social-media{
+		& > li{
+			list-style: none;
+			display: inline;
+			margin: 0 3px;
+			& > a > i{
+				color: #fff;
+			}
+		}
+	}
+	& .avvo-badges, .other-links{
+		& > li{
+			list-style: none;
+			display: inline;
+			& > a > img{
+				margin: 3px 4px;
+			}
+		}
 	}
 }
 
