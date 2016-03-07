@@ -49,15 +49,39 @@ $(document).ready(function(){
 
 	twitterFetcher.fetch({
   "id": '705913950752210944',
-  "domId": 'twitter-fetch',
+  //"domId": 'twitter-fetch',
+	"dataOnly": true,
   "maxTweets": 3,
-  "enableLinks": true
+  "enableLinks": false,
+	"customCallback": createTweets
 });
 
-	// Twitter slider
+	function createTweets(tweets){
+		var element = document.getElementById('twitter-fetch');
+	  var html = '<div id="slides">';
+	  // for (var i = 0, lgth = tweets.length; i < lgth ; i++) {
+	  //   var tweetObject = tweets[i];
+	  //   html += '<li>'
+	  //     + (tweetObject.image ? '<div class="tweet-img"><img src="'+tweetObject.image+'" /></div>' : '')
+	  //     + '<p class="tweet-content">' + tweetObject.tweet + '</p>'
+	  //     + '<p class="tweet-infos">Posted on the ' + tweetObject.time + ', by </p>' + tweetObject.author + ' '
+	  //     + '<p class="tweet-link"><a target="_blank" class="btn btn-success" href="' + tweetObject.permalinkURL + '">View Tweet</a></p>'
+	  //   + '</li>';
+	  // }
+		for (var i = 0, lgth = tweets.length; i < lgth ; i++) {
+	    var tweetObject = tweets[i];
+	    html += '<div class="row slide-row">'
+	      + (tweetObject.image ? '<div class="tweet-img col-sm-12"><img src="'+tweetObject.image+'" /></div>' : '')
+	      + '<div class="col-sm-12"><p class="tweet-content">' + tweetObject.tweet + '</p></div>'
+	      + '<div class="col-xs-6"><p class="tweet-infos text-center">Posted on ' + tweetObject.time + '</p></div>'
+	      + '<div class="col-xs-6"><p class="tweet-link text-center"><a target="_blank" class="btn btn-primary" href="' + tweetObject.permalinkURL + '">View Tweet</a></p></div>'
+	    + '</div>';
+	  }
 
-	$('#twitter-fetch').delay(2000).queue(function(){
-		$( '.simple-slider > ul' ).owlCarousel({
+
+	  html += '</div>';
+	  element.innerHTML = html;
+		$( '#slides' ).owlCarousel({
 					autoPlay: 7000,
 					stopOnHover: true,
 					slideSpeed: 200,
@@ -65,7 +89,22 @@ $(document).ready(function(){
 					rewindSpeed: 800,
 					singleItem: true
 				});
-	});
+			$('.Avatar').addClass('img-circle').addClass('img-responsive');
+
+		}
+
+	// Twitter slider
+
+	// $('#twitter-fetch').delay(2000).queue(function(){
+	// 	$( '.simple-slider > ul' ).owlCarousel({
+	// 				autoPlay: 7000,
+	// 				stopOnHover: true,
+	// 				slideSpeed: 200,
+	// 				paginationSpeed: 800,
+	// 				rewindSpeed: 800,
+	// 				singleItem: true
+	// 			});
+	// });
 
 	$('.full').anystretch();
 
