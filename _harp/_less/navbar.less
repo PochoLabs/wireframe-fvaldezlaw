@@ -326,7 +326,8 @@
 // Menu position and menu carets
 .navbar-nav > li > .dropdown-menu {
   margin-top: 0;
-  .border-top-radius(0);
+  .border-top-radius(@border-radius-base);
+	background: darken(#086C9C, 14%);
 }
 // Menu position and menu caret support for dropups via extra dropup class
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
@@ -410,16 +411,16 @@
   }
 
   .navbar-nav {
-    > li > a {
+   & li > a {
       color: @navbar-default-link-color;
 			//border: 2px solid #fff;
-			border-radius: 5px;
+			border-radius: 4px;
 			margin:  10px 0px;
 			font-family: @font-family-sans-serif;
 			font-weight: bold;
       &:hover,
       &:focus {
-        color: @navbar-default-link-hover-color;
+        color: darken(@color-primary-0, 14%);
         background-color: #fff;
       }
     }
@@ -427,7 +428,7 @@
       &,
       &:hover,
       &:focus {
-        color: @navbar-default-link-active-color;
+        color: lighten(@color-primary-0, 50%);
         background-color: @navbar-default-link-active-bg;
       }
     }
@@ -479,6 +480,7 @@
           &:focus {
             color: @navbar-default-link-hover-color;
             background-color: @navbar-default-link-hover-bg;
+						width: 65%;
           }
         }
         > .active > a {
@@ -574,6 +576,13 @@
         background-color: @navbar-inverse-link-disabled-bg;
       }
     }
+		& .dropdown-menu > li > a{
+			color: #fff;
+			&:hover,
+			&:focus {
+				background: lighten(@color-primary-0, 4%);
+			}
+		}
   }
 
   // Darken the responsive nav toggle
