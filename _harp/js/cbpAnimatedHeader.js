@@ -27,11 +27,11 @@ var cbpAnimatedHeader = (function() {
 		var sy = scrollY();
 		if ( sy >= changeHeaderOn ) {
 
-			$('nav').addClass('cbp-af-header-shrink');
+			$('nav.site-navigation').addClass('cbp-af-header-shrink');
 		}
 		else {
 
-			$('nav').removeClass('cbp-af-header-shrink');
+			$('nav.site-navigation').removeClass('cbp-af-header-shrink');
 		}
 		didScroll = false;
 	}
