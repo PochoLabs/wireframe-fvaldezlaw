@@ -1,27 +1,22 @@
 ul.nav.nav-tabs.nav-justified(role="tablist")
 	li.active(role="presentation") #[a(data-toggle="tab", href="#sec1", role="tab", aria-controls="#sec1") #[i.fa.fa-phone-square] Call Today]
-	li(role="presentation") #[a(data-toggle="tab", href="#sec2", role="tab", aria-controls="#sec2") #[i.fa.fa-skype] Skype Consultaion]
-	li(role="presentation") #[a(data-toggle="tab", href="#sec3", role="tab", aria-controls="#sec3") #[i.fa.fa-comment] Chat]
+	li(role="presentation") #[a(data-toggle="tab", href="#sec2", role="tab", aria-controls="#sec2") #[i.fa.fa-skype] Email Us]
+
 
 div.tab-content
 	div#sec1.tab-pane.fade.in.active(role="tab-panel")
 		.row
-			.col-sm-6
+			.col-sm-9
 				h3 Let's talk
 				p We would love to know how we can help.
-			.col-sm-6
-				button.btn.btn-primary.btn-lg.btn-block.contact-btn(type="button") Call Us
+				a.btn.btn-success.btn-lg.contact-btn(href="#", target="_blank") Call Us
+			.col-sm-3.contact-icon
+				i.fa.fa-phone-square
 	div#sec2.tab-pane.fade(role="tab-panel")
 		.row
-			.col-sm-6
-				h3 What's your Skype Name?
-				p Ours is '_____'. Call us on Skype and we can have a consultation over video.
-			.col-sm-6
-				button.btn.btn-primary.btn-lg.btn-block.contact-btn(type="button") Skype Us
-	div#sec3.tab-pane.fade(role="tab-panel")
-		.row
-			.col-sm-6
-				h3 Legal Chatroom
-				p We get it. You a call or video chat may seem like a big commitment. If we are online, we'll be glad to start a dialogue over chat.
-			.col-sm-6
-				button.btn.btn-primary.btn-lg.btn-block.contact-btn(type="button") Chat With Us
+			.col-sm-9
+				h3 Let's start over email
+				p Talking to us is very easy. Let's start a conversation over email.
+				a.btn.btn-success.btn-lg.contact-btn(href="mailto:test@test.com", target="_blank") Email Us
+			.col-sm-3.contact-icon
+				i.fa.fa-envelope

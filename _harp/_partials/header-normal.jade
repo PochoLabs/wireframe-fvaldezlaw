@@ -6,6 +6,10 @@ html(lang="en")
 
 		link(rel="stylesheet" href="css/bootstrap.css")
 		link(rel="stylesheet" href="css/font-awesome.css")
+		link(rel="stylesheet" href="css/animate.min.css")
+		link(rel="stylesheet" href="css/owl.carousel.css")
+		link(rel="stylesheet" href="css/owl.transitions.css")
+		link(rel="stylesheet" href="css/owl.theme.css")
 		link(rel="stylesheet" href="main.css")
 	body
 		.container.white-bg
@@ -16,7 +20,7 @@ html(lang="en")
 						.row
 							.site-header-inner.col-sm-12
 								.site-branding
-									img.img-responsive(src="/img/logo-fvaldez-long.png", alt="")
+									img.img-responsive(src="http://pocholabs.com/wireframe-fvaldezlaw/img/logo-fvaldez-long.png", alt="")
 
 				.col-md-6
 					.header-feature
@@ -24,7 +28,7 @@ html(lang="en")
 							| Call now for a consultaion over the phone: 555-555-5555
 						a.btn.btn-success.btn-block(href='#') Call Now!
 
-		.container.white-bg
+		.container.white-bg.no-side-padding
 			nav.navbar.navbar-inverse(role="navigation")
 				div.container
 					div.navbar-header
@@ -43,6 +47,11 @@ html(lang="en")
 							li
 								a(href="/wireframe-fvaldezlaw/services.html") Services
 							li
-								a(href="/wireframe-fvaldezlaw/news.html") News
+								a.dropdown-toggle(href="#", data-toggle="dropdown") News
+								ul.dropdown-menu(role="menu")
+									li
+										a(href="#") Sub 1
+									li
+										a(href="#") Sub 2
 							li
 								a(href="/wireframe-fvaldezlaw/virtual.html") Virtual Office
