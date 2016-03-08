@@ -39,7 +39,7 @@ html(lang="en")
 
 											div.collapse.navbar-collapse.navbar-right(id="bs-example-navbar-collapse-1")
 												ul.nav.navbar-nav.home-nav
-													li
+													li.active
 														a(href="/wireframe-fvaldezlaw/") Home
 													li.separator.hidden-xs
 													li
@@ -49,7 +49,12 @@ html(lang="en")
 														a(href="/wireframe-fvaldezlaw/services.html") Services
 													li.separator.hidden-xs
 													li
-														a(href="/wireframe-fvaldezlaw/news.html") News
+														a.dropdown-toggle(href="#", data-toggle="dropdown") News
+														ul.dropdown-menu(role="menu")
+															li
+																a(href="#") Sub 1
+															li
+																a(href="#") Sub 2
 													li.separator.hidden-xs
 													li
 														a(href="/wireframe-fvaldezlaw/virtual.html") Virtual Office

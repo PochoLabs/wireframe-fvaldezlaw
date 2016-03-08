@@ -6,6 +6,10 @@ html(lang="en")
 
 		link(rel="stylesheet" href="css/bootstrap.css")
 		link(rel="stylesheet" href="css/font-awesome.css")
+		link(rel="stylesheet" href="css/animate.min.css")
+		link(rel="stylesheet" href="css/owl.carousel.css")
+		link(rel="stylesheet" href="css/owl.transitions.css")
+		link(rel="stylesheet" href="css/owl.theme.css")
 		link(rel="stylesheet" href="main.css")
 	body
 		.container.white-bg
@@ -43,6 +47,11 @@ html(lang="en")
 							li
 								a(href="/wireframe-fvaldezlaw/services.html") Services
 							li
-								a(href="/wireframe-fvaldezlaw/news.html") News
+								a.dropdown-toggle(href="#", data-toggle="dropdown") News
+								ul.dropdown-menu(role="menu")
+									li
+										a(href="#") Sub 1
+									li
+										a(href="#") Sub 2
 							li
 								a(href="/wireframe-fvaldezlaw/virtual.html") Virtual Office
